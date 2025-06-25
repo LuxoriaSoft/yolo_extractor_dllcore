@@ -4,10 +4,12 @@ using Luxoria.Algorithm.YoLoDetectModel;
 
 Console.Write("Creating API...");
 YoLoDetectModelAPI api = new YoLoDetectModelAPI("yolov5l.onnx");
+Console.WriteLine("Ok!");
 
 Console.Write("Detecting using API...");
-var data = api.Detect("img.jpg");
+IReadOnlyCollection<Detection> data = api.Detect("img.jpg");
+Console.WriteLine("Ok!");
 
 Console.WriteLine(data);
 
-Console.WriteLine($"Detected {data.Count} objects:");
+Console.WriteLine($"Detected : {data.Count} objects");

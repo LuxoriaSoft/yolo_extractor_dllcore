@@ -11,22 +11,36 @@
   </ItemGroup>
 
   <PropertyGroup>
-	<AssemblyName>Luxoria.Algorithm.YoLoDetectModel</AssemblyName>
-	<RootNamespace>Luxoria.Algorithm.YoLoDetectModel</RootNamespace>
-	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>Luxoria.Algorithm.YoLoDetectModel</AssemblyName>
+    <RootNamespace>Luxoria.Algorithm.YoLoDetectModel</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
 	<PackageId>Luxoria.Algorithm.YoLoDetectModel</PackageId>
-	<Version>1.0.0</Version>
-	<Authors>LuxoriaSoft</Authors>
-	<RepositoryType>git</RepositoryType>
-	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-	<OutputPath>bin\NuGet</OutputPath>
+    <Description>Library for YoLo Detect Model using OpenCV and native interop.</Description>
+    <Version>1.0.0</Version>
+    <Authors>LuxoriaSoft</Authors>
+    <RepositoryType>git</RepositoryType>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <OutputPath>bin\NuGet</OutputPath>
+    <PackageIcon>logo128x128.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <ItemGroup>
-	<EmbeddedResource Include="NativeLibraries\arm64\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.arm64.obb_extractor.dll" />
-	<EmbeddedResource Include="NativeLibraries\x64\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.x64.obb_extractor.dll" />
-	<EmbeddedResource Include="NativeLibraries\x86\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.x86.obb_extractor.dll" />
+    <EmbeddedResource Include="NativeLibraries\arm64\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.arm64.obb_extractor.dll" />
+    <EmbeddedResource Include="NativeLibraries\x64\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.x64.obb_extractor.dll" />
+    <EmbeddedResource Include="NativeLibraries\x86\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.x86.obb_extractor.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\logo128x128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

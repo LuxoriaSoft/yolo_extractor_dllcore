@@ -8,3 +8,4 @@ obj
 .vscode
 .DS_Store
 .ini
+._*

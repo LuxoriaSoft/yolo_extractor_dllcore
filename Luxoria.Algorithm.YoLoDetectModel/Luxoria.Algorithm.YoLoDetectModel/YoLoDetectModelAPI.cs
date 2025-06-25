@@ -23,7 +23,6 @@ public class YoLoDetectModelAPI : IDisposable
     /// Native dynamic link library name
     /// </summary>
     private const string NativeLibraryName = "obb_extractor";
-    private IntPtr _instance;
     /// <summary>
     /// No max of boxes detected
     /// </summary>
