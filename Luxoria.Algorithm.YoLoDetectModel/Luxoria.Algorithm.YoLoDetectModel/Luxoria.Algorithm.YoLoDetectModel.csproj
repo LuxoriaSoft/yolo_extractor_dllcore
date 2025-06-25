@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="NativeLibraries\" />
+  </ItemGroup>
+
+  <PropertyGroup>
+	<AssemblyName>Luxoria.Algorithm.YoLoDetectModel</AssemblyName>
+	<RootNamespace>Luxoria.Algorithm.YoLoDetectModel</RootNamespace>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+	<PackageId>Luxoria.Algorithm.YoLoDetectModel</PackageId>
+	<Version>1.0.0</Version>
+	<Authors>LuxoriaSoft</Authors>
+	<RepositoryType>git</RepositoryType>
+	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+	<OutputPath>bin\NuGet</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<EmbeddedResource Include="NativeLibraries\arm64\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.arm64.obb_extractor.dll" />
+	<EmbeddedResource Include="NativeLibraries\x64\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.x64.obb_extractor.dll" />
+	<EmbeddedResource Include="NativeLibraries\x86\obb_extractor.dll" LogicalName="Luxoria.Algorithm.YoLoDetectModel.NativeLibraries.x86.obb_extractor.dll" />
+  </ItemGroup>
+
+</Project>

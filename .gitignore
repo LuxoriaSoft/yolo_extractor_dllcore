@@ -1,1 +1,10 @@
 build
+vs
+out
+bin
+obj
+
+.vs
+.vscode
+.DS_Store
+.ini
