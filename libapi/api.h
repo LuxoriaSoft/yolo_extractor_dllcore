@@ -12,7 +12,5 @@ struct YoloBBox {
 };
 
 YOLO_API int  yolo_init(const char* onnxPath);
-YOLO_API int  yolo_detect(
-    const unsigned char* bgr, int width, int height, int stride,
-    YoloBBox* outArray, int maxBoxes);
+YOLO_API int  yolo_detect(const char* imagePath, YoloBBox* outBoxes, int maxBoxes);
 YOLO_API void yolo_free();
